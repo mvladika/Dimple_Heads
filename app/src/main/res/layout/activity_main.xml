@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvCourseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Name"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/etCourseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Course Name"
+            android:layout_below="@+id/tvCourseName"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tvCourseAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Address"
+            android:layout_below="@+id/etCourseName"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/etCourseAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCourseAddress"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:hint="Course Address"
+            android:inputType="textPostalAddress" />
+
+        <TextView
+            android:id="@+id/tvNumOfHoles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of Holes"
+            android:layout_below="@+id/etCourseAddress"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/etNumOfHoles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNumOfHoles"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:hint="Number of Holes"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/tvCoursePar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Par"
+            android:layout_below="@+id/etNumOfHoles"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/etCoursePar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCoursePar"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:hint="Course Par"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/tvYearOpened"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year Course Opened"
+            android:layout_below="@+id/etCoursePar"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/etYearOpened"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvYearOpened"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:hint="Year Opened"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/tvProOnsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pro Onsite"
+            android:layout_below="@+id/etYearOpened"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/etProOnsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvProOnsite"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:hint="Pro Onsite"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/tvDrivingRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etProOnsite"
+            android:layout_marginLeft="10dp"
+            android:text="Driving Range Onsite"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etDrivingRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDrivingRange"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:hint="Driving Range Onsite"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/tvRentalClubs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rental Clubs Onsite"
+            android:layout_below="@+id/etDrivingRange"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp" />
+
+        <EditText
+            android:id="@+id/etRentalClubs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvRentalClubs"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:hint="Rental Clubs Onsite"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/tvRentalCarts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rental Carts Onsite"
+            android:layout_below="@+id/etRentalClubs"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/etRentalCarts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvRentalCarts"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:hint="Rental Clubs Onsite"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnSubmitCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etRentalCarts"
+            android:layout_marginLeft="10dp"
+            android:text="Submit" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

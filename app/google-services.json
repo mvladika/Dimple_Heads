@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "96424745415",
+    "firebase_url": "https://dimplehead-8b38e-default-rtdb.firebaseio.com",
+    "project_id": "dimplehead-8b38e",
+    "storage_bucket": "dimplehead-8b38e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96424745415:android:b82e1805f3b831940321e2",
+        "android_client_info": {
+          "package_name": "com.dimplehead.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96424745415-9ugjkqc5ejjpi2rg8d48029i331qu7hl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoUgH2Lf0OsAA5bCBoqRZpp79i4Lxm2X0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "96424745415-9ugjkqc5ejjpi2rg8d48029i331qu7hl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
