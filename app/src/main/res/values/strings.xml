@@ -6,4 +6,9 @@
     <string name="log_in">Log In</string>
     <string name="no_account">Don\'t Have an Account?</string>
     <string name="create_one">Create One</string>
+    <string name="name">Name</string>
+    <string name="dob">Date of Birth</string>
+    <string name="yearsGolfing">Years Spent Golfing</string>
+    <string name="alreadyAccount">Already Have An Account?</string>
+    <string name="createAccount">Create An Account</string>
 </resources>

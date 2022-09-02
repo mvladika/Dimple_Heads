@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccount">
+
+    <TextView
+        android:id="@+id/dimpleHeadTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/dimpleheads"
+        android:textColor="@color/dimpleheadsGREEN"
+        android:textSize="55sp"
+        android:textStyle="bold" />
+
+<RelativeLayout
+    android:id="@+id/userInfoRelativeLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/dimpleHeadTextView"
+    android:layout_marginTop="25dp">
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/squaregreenboarder"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:textColor="@color/dimpleheadsGREEN" />
+
+    <EditText
+        android:id="@+id/dobEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/squaregreenboarder"
+        android:ems="10"
+        android:hint="@string/dob"
+        android:inputType="date"
+        android:textColor="@color/dimpleheadsGREEN"
+        android:layout_below="@id/nameEditText"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/squaregreenboarder"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/dimpleheadsGREEN"
+        android:layout_below="@id/dobEditText"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/squaregreenboarder"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="@color/dimpleheadsGREEN"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/yearsGolfingEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/squaregreenboarder"
+        android:ems="10"
+        android:hint="@string/yearsGolfing"
+        android:inputType="number"
+        android:textColor="@color/dimpleheadsGREEN"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/signinButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/yearsGolfingEditText"
+        android:backgroundTint="@color/dimpleheadsGREEN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="40dp"
+        android:text="@string/createAccount"/>
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/noAccountRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userInfoRelativeLayout"
+        android:layout_marginTop="-18dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/noAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/alreadyAccount"
+            android:textColor="@color/dimpleheadsGREEN" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noAccount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/dimpleheadsGREEN"
+            android:text="@string/log_in" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/createAccountImageView"
+        android:layout_width="218dp"
+        android:layout_height="202dp"
+        android:layout_below="@id/noAccountRelativeLayout"
+        app:srcCompat="@drawable/golfballontee"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
