@@ -42,7 +42,8 @@
             android:background="@drawable/squaregreenboarder"
             android:ems="10"
             android:hint="@string/email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:textColor="@color/dimpleheadsGREEN"/>
 
         <EditText
             android:id="@+id/passwordEditText"
@@ -54,14 +55,45 @@
             android:background="@drawable/squaregreenboarder"
             android:hint="@string/password"
             android:layout_marginTop="5dp"
-            android:layout_marginHorizontal="10dp"/>
+            android:layout_marginHorizontal="10dp"
+            android:textColor="@color/dimpleheadsGREEN"/>
 
-        <ImageButton
+        <Button
             android:id="@+id/signinButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/passwordEditText"
+            android:backgroundTint="@color/dimpleheadsGREEN"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="40dp"
+            android:text="@string/log_in"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/noAccountRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signinTexts"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/noAccount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/passwordEditText"
-            android:background=""/>
+            android:text="@string/no_account"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/dimpleheadsGREEN"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noAccount"
+            android:backgroundTint="@color/dimpleheadsGREEN"
+            android:text="@string/create_one"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"/>
 
     </RelativeLayout>
 
