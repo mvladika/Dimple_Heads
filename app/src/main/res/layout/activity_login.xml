@@ -10,11 +10,11 @@
         android:id="@+id/loginImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-44dp"
         app:srcCompat="@drawable/dhicon"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="329dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="-44dp"/>
+        tools:layout_editor_absoluteY="329dp" />
 
     <TextView
         android:id="@+id/dimpleHeadTextView"

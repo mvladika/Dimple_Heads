@@ -4,11 +4,15 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/appicon"
+        android:roundIcon="@drawable/appicon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DimpleHeads">
+        <activity
+            android:name=".UserHome"
+            android:exported="false"
+            android:theme="@style/Theme.DimpleHeads.NoActionBar" />
         <activity
             android:name=".CreateAccount"
             android:exported="false" />

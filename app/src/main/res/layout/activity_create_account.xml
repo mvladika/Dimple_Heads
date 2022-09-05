@@ -130,8 +130,8 @@
         android:layout_width="218dp"
         android:layout_height="202dp"
         android:layout_below="@id/noAccountRelativeLayout"
-        app:srcCompat="@drawable/golfballontee"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"/>
+        app:srcCompat="@drawable/golfballontee" />
 
 </RelativeLayout>
