@@ -24,4 +24,13 @@
     <string name="menu_slideshow">Slideshow</string>
     <string name="matthew_vladika">Matthew Vladika</string>
     <string name="userMenuExampleText">Matthew Vladika, Dimple Head</string>
+    <string name="last_course_played">Last Course Played :</string>
+    <string name="exampleLastCoursePlayed">Lake Monterey on 07/25/2022</string>
+    <string name="fsolg">Final Score of Last Game :</string>
+    <string name="_68_3_over_par_for_18_holes">68 (3 over Par for 18 Holes)</string>
+    <string name="best_score">Best Score :</string>
+    <string name="_3_strokes_on_a_par_5_on_04_23_2022">3 Strokes on a Par 5 on 04/23/2022</string>
+    <string name="play_new_round">Play New Round</string>
+    <string name="continue_round">Continue Round</string>
+    <string name="my_statistics">My Statistics</string>
 </resources>
