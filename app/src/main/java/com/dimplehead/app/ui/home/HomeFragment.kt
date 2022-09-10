@@ -1,5 +1,6 @@
 package com.dimplehead.app.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +8,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.dimplehead.app.NewRound
 import com.dimplehead.app.databinding.FragmentHomeBinding
+import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
 
@@ -26,9 +29,13 @@ class HomeFragment : Fragment() {
             ViewModelProvider(this).get(HomeViewModel::class.java)
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
-        val root: View = binding.root
-32
-        return root
+
+//        playnewroundBtn.setOnClickListener {
+//            val intent = Intent(this.parentFragment?.context, NewRound::class.java)
+//            startActivity(intent)
+//        }
+
+        return binding.root
     }
 
     override fun onDestroyView() {

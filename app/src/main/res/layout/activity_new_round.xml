@@ -22,7 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/newroundHeader"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="25dp" />
+        android:layout_marginTop="25dp"
+        android:background="@drawable/squaregreenboarder"/>
 
     <RelativeLayout
         android:id="@+id/entirePlayerAdd"

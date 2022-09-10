@@ -38,14 +38,14 @@
         android:id="@+id/dobEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/nameEditText"
         android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
         android:background="@drawable/squaregreenboarder"
         android:ems="10"
         android:hint="@string/dob"
         android:inputType="date"
-        android:textColor="@color/dimpleheadsGREEN"
-        android:layout_below="@id/nameEditText"
-        android:layout_marginTop="5dp"/>
+        android:textColor="@color/dimpleheadsGREEN" />
 
     <EditText
         android:id="@+id/emailEditText"

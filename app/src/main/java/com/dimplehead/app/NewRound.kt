@@ -5,9 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View.VISIBLE
 import android.widget.ArrayAdapter
-import android.widget.RelativeLayout
-import android.widget.Toast
-import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_new_round.*
 
 class NewRound : AppCompatActivity() {
