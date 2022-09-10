@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewRound">
+
+    <TextView
+        android:id="@+id/newroundHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_round"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/dimpleheadsGREEN" />
+
+    <Spinner
+        android:id="@+id/newroundCourseSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newroundHeader"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="25dp" />
+
+    <RelativeLayout
+        android:id="@+id/entirePlayerAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newroundCourseSpinner"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/dimpleheadsGREEN"
+        android:paddingVertical="15dp">
+
+        <TextView
+            android:id="@+id/playerstv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/players"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/player1RL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/playerstv"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/player1tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:text="@string/player_1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/usersNamePlayers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/player1tv"
+                android:paddingStart="10dp"
+                android:text="@string/matthew_vladika"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/player2RL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/player1RL"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/player2tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:text="@string/player_2"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/player2name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/player2tv"
+                android:paddingStart="10dp"
+                android:text="@string/matthew_vladika"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/player3RL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/player2RL"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/player3tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:text="@string/player_3"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/player3name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/player3tv"
+                android:paddingStart="10dp"
+                android:text="@string/matthew_vladika"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/player4RL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/player3RL"
+            android:layout_marginTop="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/player4tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:text="@string/player_4"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/player4name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/player4tv"
+                android:paddingStart="10dp"
+                android:text="@string/matthew_vladika"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/addplayerbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/player4RL"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/secondaryDHG"
+            android:text="@string/add_player"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/playaroundBTNiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/entirePlayerAdd"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:srcCompat="@drawable/playaround" />
+
+</RelativeLayout>
