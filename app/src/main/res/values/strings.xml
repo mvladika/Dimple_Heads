@@ -33,4 +33,20 @@
     <string name="play_new_round">Play New Round</string>
     <string name="continue_round">Continue Round</string>
     <string name="my_statistics">My Statistics</string>
+    <string name="my_golf_statistics">My Golf Statistics</string>
+    <string name="best_hole">Best Hole :</string>
+    <string name="hole_in_one">Hole in One on a Par 3</string>
+    <string name="favorite_course">Favorite Course :</string>
+    <string name="scott_lake_country_club">Scott Lake Country Club</string>
+    <string name="_60_at_lake_monterey_golf_course">60 at Lake Monterey Golf Course</string>
+    <string name="rounds_played_w_dimple_heads">Rounds Played W/ Dimple Heads :</string>
+    <string name="_4">4</string>
+    <string name="number_of_players_saved">Number of Players Saved :</string>
+    <string name="placings">Placings :</string>
+    <string name="first_places">First Places :</string>
+    <string name="_3">3</string>
+    <string name="second_places">Second Places :</string>
+    <string name="_1">1</string>
+    <string name="_0">0</string>
+    <string name="third_places">Third Places :</string>
 </resources>
