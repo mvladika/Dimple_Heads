@@ -20,17 +20,17 @@
         android:id="@+id/playersnametoaddET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_player_s_name"
         android:layout_below="@+id/addplayerdialogtv"
-        android:layout_marginBottom="15dp"/>
+        android:layout_marginBottom="15dp"
+        android:hint="@string/enter_player_s_name" />
 
     <Button
         android:id="@+id/addplayerdialogbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/playersnametoaddET"
-        android:text="@string/add_player"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="15dp"/>
+        android:layout_marginBottom="15dp"
+        android:text="@string/add_player" />
 
 </RelativeLayout>
