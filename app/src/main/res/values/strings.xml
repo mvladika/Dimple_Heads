@@ -93,4 +93,6 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="golf">Golf</string>
+    <string name="add_a_player">Add A Player</string>
+    <string name="enter_player_s_name">Enter Player\'s Name</string>
 </resources>

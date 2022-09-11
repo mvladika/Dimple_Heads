@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AddPlayerDialog"
+    android:layout_margin="15dp">
+
+    <TextView
+        android:id="@+id/addplayerdialogtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="@string/add_a_player"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/playersnametoaddET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_player_s_name"
+        android:layout_below="@+id/addplayerdialogtv"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/addplayerdialogbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/playersnametoaddET"
+        android:text="@string/add_player"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"/>
+
+</RelativeLayout>
