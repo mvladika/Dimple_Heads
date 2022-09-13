@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DimpleHeads">
         <activity
+            android:name=".ActiveRound"
+            android:exported="false" />
+        <activity
             android:name=".AddPlayerDialog"
             android:exported="false" />
         <activity

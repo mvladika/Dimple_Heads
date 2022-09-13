@@ -45,7 +45,6 @@
     <string name="first_places">First Places :</string>
     <string name="_3">3</string>
     <string name="second_places">Second Places :</string>
-    <string name="_1">1</string>
     <string name="_0">0</string>
     <string name="third_places">Third Places :</string>
     <string name="new_round">New Round</string>
@@ -95,4 +94,22 @@
     <string name="golf">Golf</string>
     <string name="add_a_player">Add A Player</string>
     <string name="enter_player_s_name">Enter Player\'s Name</string>
+    <string name="hole">Hole</string>
+    <string name="par">Par</string>
+    <string name="player_1_">Player 1</string>
+    <string name="player_2_">Player 2</string>
+    <string name="player_3_">Player 3</string>
+    <string name="player_4_">Player 4</string>
+    <string name="_1">__</string>
+    <string name="my_scorecard">My Scorecard</string>
+    <string name="_2">2</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="previous_9">Previous 9</string>
+    <string name="next_9">Next 9</string>
+    <string name="finish_round">Finish Round</string>
+    <string name="num_1">1</string>
 </resources>

@@ -10,11 +10,11 @@
         android:id="@+id/newroundHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/new_round"
-        android:textSize="35sp"
         android:layout_centerHorizontal="true"
-        android:textStyle="bold"
-        android:textColor="@color/dimpleheadsGREEN" />
+        android:text="@string/new_round"
+        android:textColor="@color/dimpleheadsGREEN"
+        android:textSize="35sp"
+        android:textStyle="bold" />
 
     <Spinner
         android:id="@+id/newroundCourseSpinner"
@@ -178,9 +178,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/entirePlayerAdd"
-        android:layout_margin="20dp"
         android:clickable="true"
         android:focusable="true"
+        android:padding="60dp"
         app:srcCompat="@drawable/playaround" />
 
 </RelativeLayout>

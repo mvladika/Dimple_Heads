@@ -241,7 +241,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_toEndOf="@id/userseconds"
-                    android:text="@string/_1"
+                    android:text="@string/num_1"
                     android:textSize="18sp" />
 
             </RelativeLayout>

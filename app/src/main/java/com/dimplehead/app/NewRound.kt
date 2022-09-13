@@ -24,8 +24,8 @@ class NewRound : AppCompatActivity() {
         }
 
         playaroundBTNiv.setOnClickListener {
-           // val intent = Intent(this, ActiveRound::class.java)
-           // startActivity(intent)
+            val intent = Intent(this, ActiveRound::class.java)
+            startActivity(intent)
         }
     }
 
@@ -54,16 +54,19 @@ class NewRound : AppCompatActivity() {
             {
                 plyr2RL.visibility = VISIBLE
                 plyr2tv.text = playername
+                playaroundBTNiv.setPadding(60,60,60,60)
             }
             else if (x == 3)
             {
                 plyr3RL.visibility = VISIBLE
                 plyr3tv.text = playername
+                playaroundBTNiv.setPadding(40,40,40,40)
             }
             else if (x == 4)
             {
                 plyr4RL.visibility = VISIBLE
                 plyr4tv.text = playername
+                playaroundBTNiv.setPadding(20,20,20,20)
             }
 
             dialog.dismiss()
