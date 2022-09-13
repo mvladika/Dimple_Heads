@@ -142,9 +142,9 @@
         android:layout_below="@id/continueroundBtn"
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="20dp"
+        android:paddingVertical="15dp"
         android:text="@string/my_statistics"
-        android:textSize="18sp"
-        android:paddingVertical="15dp"/>
+        android:textSize="18sp" />
 
     <ImageView
         android:layout_width="wrap_content"

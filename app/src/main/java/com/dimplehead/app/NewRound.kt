@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_new_round.*
 
 class NewRound : AppCompatActivity() {
 
-    var x = 1
+    var numOfPlayers = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,7 +41,7 @@ class NewRound : AppCompatActivity() {
         val addPlayerBTN = dialog.findViewById<Button>(R.id.addplayerdialogbutton)
 
         addPlayerBTN.setOnClickListener {
-            x++
+            numOfPlayers++
             val playername = playerToAddET.text
             val plyr2RL = findViewById<RelativeLayout>(R.id.player2RL)
             val plyr3RL = findViewById<RelativeLayout>(R.id.player3RL)
@@ -50,19 +50,19 @@ class NewRound : AppCompatActivity() {
             val plyr3tv = findViewById<TextView>(R.id.player3name)
             val plyr4tv = findViewById<TextView>(R.id.player4name)
 
-            if(x == 2)
+            if(numOfPlayers == 2)
             {
                 plyr2RL.visibility = VISIBLE
                 plyr2tv.text = playername
                 playaroundBTNiv.setPadding(60,60,60,60)
             }
-            else if (x == 3)
+            else if (numOfPlayers == 3)
             {
                 plyr3RL.visibility = VISIBLE
                 plyr3tv.text = playername
                 playaroundBTNiv.setPadding(40,40,40,40)
             }
-            else if (x == 4)
+            else if (numOfPlayers == 4)
             {
                 plyr4RL.visibility = VISIBLE
                 plyr4tv.text = playername
@@ -90,6 +90,6 @@ class NewRound : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        x = 0
+        numOfPlayers = 0
     }
 }
