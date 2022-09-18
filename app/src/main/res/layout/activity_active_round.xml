@@ -22,9 +22,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/myscorecardheadertv"
         android:layout_centerHorizontal="true"
-        android:layout_margin="5dp"
-        android:columnCount="6"
-        android:background="@drawable/squaregreenboarder">
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/squaregreenboarder"
+        android:columnCount="6">
 
         <TextView
             android:id="@+id/holeheadertv"
@@ -106,7 +109,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
-            android:background="@drawable/squaregreenboarder"
+            android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
             android:textSize="25sp" />
@@ -164,7 +167,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
-            android:background="@drawable/squaregreenboarder"
+            android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
             android:textSize="25sp" />
@@ -222,7 +225,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
-            android:background="@drawable/squaregreenboarder"
+            android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
             android:textSize="25sp" />
@@ -280,7 +283,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
-            android:background="@drawable/squaregreenboarder"
+            android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
             android:textSize="25sp" />
@@ -338,7 +341,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
-            android:background="@drawable/squaregreenboarder"
+            android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
             android:textSize="25sp" />
@@ -397,7 +400,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
-            android:background="@drawable/squaregreenboarder"
+            android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
             android:textSize="25sp" />
@@ -455,7 +458,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
-            android:background="@drawable/squaregreenboarder"
+            android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
             android:textSize="25sp" />
@@ -513,7 +516,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
-            android:background="@drawable/squaregreenboarder"
+            android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
             android:textSize="25sp" />
@@ -572,7 +575,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
-            android:background="@drawable/squaregreenboarder"
+            android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
             android:textSize="25sp" />

@@ -23,8 +23,31 @@ class NewRound : AppCompatActivity() {
             showCustomDialog()
         }
 
+
         playaroundBTNiv.setOnClickListener {
             val intent = Intent(this, ActiveRound::class.java)
+            intent.putExtra("NumberOfPlayers", numOfPlayers)
+
+            val nameOfPlayerTwoString : String = player2name.text.toString()
+            val nameOfPlayerThreeString : String = player3name.text.toString()
+            val nameOfPlayerFourString : String = player4name.text.toString()
+
+            if(numOfPlayers == 2)
+            {
+                intent.putExtra("NameOfPlayerTwo", nameOfPlayerTwoString)
+            }
+            else if (numOfPlayers == 3)
+            {
+                intent.putExtra("NameOfPlayerTwo", nameOfPlayerTwoString)
+                intent.putExtra("NameOfPlayerThree", nameOfPlayerThreeString)
+            }
+            else if (numOfPlayers == 4)
+            {
+                intent.putExtra("NameOfPlayerTwo", nameOfPlayerTwoString)
+                intent.putExtra("NameOfPlayerThree", nameOfPlayerThreeString)
+                intent.putExtra("NameOfPlayerFour", nameOfPlayerFourString)
+            }
+
             startActivity(intent)
         }
     }
