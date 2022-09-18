@@ -112,7 +112,10 @@
             android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@color/dimpleheadsGREEN"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -170,7 +173,8 @@
             android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:textColor="@color/dimpleheadsGREEN"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -228,7 +232,8 @@
             android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:textColor="@color/dimpleheadsGREEN"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -286,7 +291,8 @@
             android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:textColor="@color/dimpleheadsGREEN"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -344,7 +350,8 @@
             android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:textColor="@color/dimpleheadsGREEN"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -403,7 +410,8 @@
             android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:textColor="@color/dimpleheadsGREEN"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -461,7 +469,8 @@
             android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:textColor="@color/dimpleheadsGREEN"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -519,7 +528,8 @@
             android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:textColor="@color/dimpleheadsGREEN"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -578,7 +588,8 @@
             android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:textColor="@color/dimpleheadsGREEN"/>
 
         <TextView
             android:layout_width="wrap_content"

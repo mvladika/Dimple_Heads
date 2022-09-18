@@ -113,4 +113,6 @@
     <string name="finish_round">Finish Round</string>
     <string name="num_1">1</string>
     <string name="matt">Matt</string>
+    <string name="enter_par">Enter Par</string>
+    <string name="enter_par_for_this_hole">Enter Par For This Hole</string>
 </resources>
