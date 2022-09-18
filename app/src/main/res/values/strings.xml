@@ -115,4 +115,6 @@
     <string name="matt">Matt</string>
     <string name="enter_par">Enter Par</string>
     <string name="enter_par_for_this_hole">Enter Par For This Hole</string>
+    <string name="enter_score">Enter Score</string>
+    <string name="enter_number_of_strokes">Enter Number of Strokes</string>
 </resources>

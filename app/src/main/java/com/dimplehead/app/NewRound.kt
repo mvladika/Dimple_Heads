@@ -20,7 +20,7 @@ class NewRound : AppCompatActivity() {
         setupCourseSpinner()
 
         addplayerbtn.setOnClickListener {
-            showCustomDialog()
+            showAddPlayerDialog()
         }
 
 
@@ -52,7 +52,7 @@ class NewRound : AppCompatActivity() {
         }
     }
 
-    private fun showCustomDialog() {
+    private fun showAddPlayerDialog() {
 
         val dialog = Dialog(this)
 
