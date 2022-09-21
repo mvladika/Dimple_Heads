@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CourseInfoDialog"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/courseInfoHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/diamondspringsgolfcourse"
+        android:textColor="@color/dimpleheadsGREEN"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/courseInfoAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/courseInfoHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/_3400_34th_st_hamilton_michigan_49419"
+        android:textColor="@color/secondaryDHG"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/courseInfoCoursePar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/courseInfoYearOpened"
+        android:layout_centerHorizontal="true"
+        android:text="@string/course_par_72"
+        android:textColor="@color/secondaryDHG"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/courseInfoNumberOfHoles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/courseInfoCoursePar"
+        android:layout_centerHorizontal="true"
+        android:text="@string/number_of_holes_18"
+        android:textColor="@color/secondaryDHG"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/courseInfoYearOpened"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/courseInfoAddress"
+        android:layout_centerHorizontal="true"
+        android:text="@string/opened_in_2002"
+        android:textColor="@color/secondaryDHG"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/courseInfoDrivingRange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/courseInfoNumberOfHoles"
+        android:layout_centerHorizontal="true"
+        android:text="@string/driving_range_yes"
+        android:textColor="@color/secondaryDHG"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/courseInfoRentalCarts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/courseInfoDrivingRange"
+        android:layout_centerHorizontal="true"
+        android:text="@string/rental_carts_yes"
+        android:textColor="@color/secondaryDHG"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/courseInfoRentalClubs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/courseInfoRentalCarts"
+        android:layout_centerHorizontal="true"
+        android:text="@string/rental_clubs_yes"
+        android:textColor="@color/secondaryDHG"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/courseInfoProOnSite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/courseInfoRentalClubs"
+        android:layout_centerHorizontal="true"
+        android:text="@string/pro_on_site_yes"
+        android:textColor="@color/secondaryDHG"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/closeCourseInfoDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/close"
+        android:layout_below="@id/courseInfoProOnSite"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="30dp"/>
+
+
+</RelativeLayout>

@@ -7,7 +7,6 @@ import android.view.View.INVISIBLE
 import android.widget.Button
 import android.widget.RelativeLayout
 import android.widget.TextView
-import kotlinx.android.synthetic.main.activity_round_finished.*
 
 class RoundFinished : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +20,8 @@ class RoundFinished : AppCompatActivity() {
         var nameOfPlayer2: String? = null
         var nameOfPlayer3: String? = null
         var nameOfPlayer4: String? = null
+        var parString: String? = null
+        var courseString: String? = null
         val bundle: Bundle? = intent.extras
         val numberOfPlayers = intent.getSerializableExtra("NumberOfPlayers") as Int
         val secondPlaceRL = findViewById<RelativeLayout>(R.id.entireSecondPlaceRL)
@@ -35,9 +36,14 @@ class RoundFinished : AppCompatActivity() {
         val thirdplaceplayer = findViewById<TextView>(R.id.thirdplaceplaver)
         val fourthplaceplayer = findViewById<TextView>(R.id.fourthplaceplaver)
         val returnhomebtn = findViewById<Button>(R.id.returnhomebtn)
+        val nameOfCoursetv = findViewById<TextView>(R.id.roundFinishedGolfCourse)
+        val roundfinishedpar = findViewById<TextView>(R.id.roundfinishedpar)
 
         bundle?.let {
             bundle.apply {
+                courseString = bundle.getString("NameOfCourse")
+                parString = bundle.getString("ParOfCourse")
+
                 if (numberOfPlayers == 1) {
                     plyr1score = bundle.getInt("PlayerOneScore")
                     secondPlaceRL.visibility = INVISIBLE
@@ -67,6 +73,9 @@ class RoundFinished : AppCompatActivity() {
                 }
             }
         }
+
+        roundfinishedpar.text = "Par at $courseString is $parString"
+        nameOfCoursetv.text = courseString
 
         if (numberOfPlayers == 1)
         {

@@ -18,6 +18,7 @@ class NewRound : AppCompatActivity() {
         setContentView(R.layout.activity_new_round)
 
         setupCourseSpinner()
+        val spinny = findViewById<Spinner>(R.id.newroundCourseSpinner)
 
         addplayerbtn.setOnClickListener {
             showAddPlayerDialog()
@@ -26,6 +27,8 @@ class NewRound : AppCompatActivity() {
         playaroundBTNiv.setOnClickListener {
             val intent = Intent(this, ActiveRound::class.java)
             intent.putExtra("NumberOfPlayers", numOfPlayers)
+            val nameOfCourse = spinny.selectedItem.toString()
+            intent.putExtra("NameOfCourse", nameOfCourse)
 
             val nameOfPlayerTwoString : String = player2name.text.toString()
             val nameOfPlayerThreeString : String = player3name.text.toString()
@@ -46,8 +49,14 @@ class NewRound : AppCompatActivity() {
                 intent.putExtra("NameOfPlayerThree", nameOfPlayerThreeString)
                 intent.putExtra("NameOfPlayerFour", nameOfPlayerFourString)
             }
-
-            startActivity(intent)
+            if(nameOfCourse == "Select A Course")
+            {
+                Toast.makeText(this, "Please Select A Course", Toast.LENGTH_SHORT).show()
+            }
+            else
+            {
+                startActivity(intent)
+            }
         }
     }
 

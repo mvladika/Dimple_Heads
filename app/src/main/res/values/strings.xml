@@ -124,4 +124,13 @@
     <string name="second_place">Second Place</string>
     <string name="third_place">Third Place</string>
     <string name="par_at_diamond_springs_golf_course_is_72">Par at Diamond Springs Golf Course is 72</string>
+    <string name="_3400_34th_st_hamilton_michigan_49419">3400 34th St Hamilton, Michigan 49419</string>
+    <string name="course_par_72">Course Par: 72</string>
+    <string name="number_of_holes_18">Number of Holes: 18</string>
+    <string name="opened_in_2002">Opened in 2002</string>
+    <string name="driving_range_yes">Driving Range: Yes</string>
+    <string name="rental_carts_yes">Rental Carts: Yes</string>
+    <string name="rental_clubs_yes">Rental Clubs: Yes</string>
+    <string name="pro_on_site_yes">Pro On Site: Yes</string>
+    <string name="close">Close</string>
 </resources>

@@ -7,9 +7,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View.GONE
 import android.view.Window
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
+import android.widget.*
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_active_round.*
 import kotlinx.android.synthetic.main.activity_new_round.*
 
@@ -24,6 +25,9 @@ class ActiveRound : AppCompatActivity() {
     var nameOfPlayer2: String? = null
     var nameOfPlayer3: String? = null
     var nameOfPlayer4: String? = null
+    var nameOfCourse: String? = null
+    var coursePar: String? = null
+    private lateinit var database: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,12 +44,13 @@ class ActiveRound : AppCompatActivity() {
         val h9 = findViewById<TextView>(R.id.h9)
         val bundle: Bundle? = intent.extras
         val numberOfPlayers = intent.getSerializableExtra("NumberOfPlayers") as Int
+        val courseInfoBtn = findViewById<ImageButton>(R.id.courseInfoBtn)
 
     //Getting Names of Each Player From New Round
         bundle?.let {
 
             bundle.apply {
-
+                nameOfCourse = bundle.getString("NameOfCourse") as String
                 if (numberOfPlayers == 2) {
                     nameOfPlayer2 = bundle.getString("NameOfPlayerTwo") as String
                 } else if (numberOfPlayers == 3) {
@@ -58,6 +63,24 @@ class ActiveRound : AppCompatActivity() {
                 }
             }
         }
+
+    //Getting course info from firebase for course info button
+        var course: Courses? = null
+        database = Firebase.database.reference
+        database.child("Courses").child(nameOfCourse!!).get().addOnSuccessListener {
+            course = it.getValue(Courses::class.java)!!
+            coursePar = course?.coursePar
+        }.addOnFailureListener{
+            Toast.makeText(this, it.message, Toast.LENGTH_SHORT).show()
+        }
+
+    //Course Info Dialog Box Button
+        courseInfoBtn.setOnClickListener {
+            showCourseInfoDialog(course?.courseName!!, course?.courseAddress!!, course?.yearOpened!!, course?.coursePar!!,
+                course?.numOfHoles!!, course?.drivingRange!!, course?.rentalCarts!!, course?.rentalClubs!!, course?.proOnsite!!)
+        }
+
+
 
     //Initializing the Scorecard based on info from New Round
         if (numberOfPlayers == 1) {
@@ -908,6 +931,8 @@ class ActiveRound : AppCompatActivity() {
             }
         }
 
+
+
     //Ends the Round
         finishroundbtn.setOnClickListener {
             var plyr1Score = 0
@@ -929,6 +954,8 @@ class ActiveRound : AppCompatActivity() {
             }
 
             val intent = Intent(this, RoundFinished::class.java)
+            intent.putExtra("NameOfCourse", nameOfCourse)
+            intent.putExtra("ParOfCourse", coursePar)
 
             if(numberOfPlayers == 1)
             {
@@ -966,6 +993,39 @@ class ActiveRound : AppCompatActivity() {
             startActivity(intent)
         }
 
+    }
+
+    private fun showCourseInfoDialog(name:String, address:String, yrOpen:String, par:String, numHoles:String, range:String, carts:String, clubs:String, pro:String) {
+        val dialog = Dialog(this)
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        dialog.setCancelable(true)
+        dialog.setContentView(R.layout.activity_course_info_dialog)
+
+        val courseInfoHeader = dialog.findViewById<TextView>(R.id.courseInfoHeader)
+        val courseInfoAddress = dialog.findViewById<TextView>(R.id.courseInfoAddress)
+        val courseInfoCoursePar = dialog.findViewById<TextView>(R.id.courseInfoCoursePar)
+        val courseInfoNumberOfHoles = dialog.findViewById<TextView>(R.id.courseInfoNumberOfHoles)
+        val courseInfoYearOpened = dialog.findViewById<TextView>(R.id.courseInfoYearOpened)
+        val courseInfoDrivingRange = dialog.findViewById<TextView>(R.id.courseInfoDrivingRange)
+        val courseInfoRentalCarts = dialog.findViewById<TextView>(R.id.courseInfoRentalCarts)
+        val courseInfoRentalClubs = dialog.findViewById<TextView>(R.id.courseInfoRentalClubs)
+        val courseInfoProOnSite = dialog.findViewById<TextView>(R.id.courseInfoProOnSite)
+        val closeCourseInfoDialog = dialog.findViewById<Button>(R.id.closeCourseInfoDialog)
+
+        courseInfoHeader.text = name
+        courseInfoAddress.text = address
+        courseInfoCoursePar.text = "Course Par: $par"
+        courseInfoNumberOfHoles.text = "Number of Holes: $numHoles"
+        courseInfoYearOpened.text = "Opened In $yrOpen"
+        courseInfoDrivingRange.text = "Driving Range: $range"
+        courseInfoRentalCarts.text = "Rental Carts: $carts"
+        courseInfoRentalClubs.text = "Rental Clubs: $clubs"
+        courseInfoProOnSite.text = "Pro On Site: $pro"
+
+        closeCourseInfoDialog.setOnClickListener {
+            dialog.dismiss()
+        }
+        dialog.show()
     }
 
     private fun showEnterScoreDialog(scoreTextView: TextView, numberHole: Int, scoreMap: HashMap<Int, String>) {

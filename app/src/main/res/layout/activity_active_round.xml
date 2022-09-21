@@ -10,11 +10,19 @@
         android:id="@+id/myscorecardheadertv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/my_scorecard"
         android:layout_centerHorizontal="true"
+        android:text="@string/my_scorecard"
         android:textColor="@color/dimpleheadsGREEN"
         android:textSize="35sp"
         android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/courseInfoBtn"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/coursedetails" />
 
     <GridLayout
         android:id="@+id/scorecardGridLayout"
@@ -23,7 +31,7 @@
         android:layout_below="@id/myscorecardheadertv"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="6dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="5dp"
         android:background="@drawable/squaregreenboarder"
@@ -102,8 +110,8 @@
             android:layout_margin="1dp"
             android:padding="1dp"
             android:text="@string/num_1"
-            android:textSize="25sp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/h1par"
@@ -111,12 +119,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squareblackboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/dimpleheadsGREEN"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/dimpleheadsGREEN"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p1h1"
@@ -124,12 +132,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p2h1"
@@ -137,12 +145,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p3h1"
@@ -150,12 +158,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p4h1"
@@ -163,12 +171,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/h2"
@@ -177,8 +185,8 @@
             android:layout_margin="1dp"
             android:padding="2dp"
             android:text="@string/_2"
-            android:textSize="25sp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/h2par"
@@ -188,8 +196,8 @@
             android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
-            android:textSize="25sp"
-            android:textColor="@color/dimpleheadsGREEN"/>
+            android:textColor="@color/dimpleheadsGREEN"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p1h2"
@@ -197,12 +205,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p2h2"
@@ -210,12 +218,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p3h2"
@@ -223,12 +231,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p4h2"
@@ -236,12 +244,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/h3"
@@ -250,8 +258,8 @@
             android:layout_margin="1dp"
             android:padding="2dp"
             android:text="@string/_3"
-            android:textSize="25sp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/h3par"
@@ -261,8 +269,8 @@
             android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
-            android:textSize="25sp"
-            android:textColor="@color/dimpleheadsGREEN"/>
+            android:textColor="@color/dimpleheadsGREEN"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p1h3"
@@ -270,12 +278,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p2h3"
@@ -283,12 +291,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p3h3"
@@ -296,12 +304,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p4h3"
@@ -309,12 +317,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/h4"
@@ -323,9 +331,8 @@
             android:layout_margin="1dp"
             android:padding="2dp"
             android:text="@string/_4"
-            android:textSize="25sp"
             android:textColor="@color/black"
-            />
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/h4par"
@@ -335,8 +342,8 @@
             android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
-            android:textSize="25sp"
-            android:textColor="@color/dimpleheadsGREEN"/>
+            android:textColor="@color/dimpleheadsGREEN"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p1h4"
@@ -344,12 +351,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p2h4"
@@ -357,12 +364,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p3h4"
@@ -370,12 +377,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p4h4"
@@ -383,12 +390,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/h5"
@@ -397,8 +404,8 @@
             android:layout_margin="1dp"
             android:padding="2dp"
             android:text="@string/_5"
-            android:textSize="25sp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/h5par"
@@ -408,8 +415,8 @@
             android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
-            android:textSize="25sp"
-            android:textColor="@color/dimpleheadsGREEN"/>
+            android:textColor="@color/dimpleheadsGREEN"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p1h5"
@@ -417,12 +424,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p2h5"
@@ -430,12 +437,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p3h5"
@@ -443,12 +450,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
 
         <TextView
@@ -457,12 +464,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/h6"
@@ -471,8 +478,8 @@
             android:layout_margin="1dp"
             android:padding="2dp"
             android:text="@string/_6"
-            android:textSize="25sp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/h6par"
@@ -482,8 +489,8 @@
             android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
-            android:textSize="25sp"
-            android:textColor="@color/dimpleheadsGREEN"/>
+            android:textColor="@color/dimpleheadsGREEN"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p1h6"
@@ -491,12 +498,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p2h6"
@@ -504,12 +511,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p3h6"
@@ -517,12 +524,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p4h6"
@@ -530,12 +537,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/h7"
@@ -544,8 +551,8 @@
             android:layout_margin="1dp"
             android:padding="2dp"
             android:text="@string/_7"
-            android:textSize="25sp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/h7par"
@@ -555,8 +562,8 @@
             android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
-            android:textSize="25sp"
-            android:textColor="@color/dimpleheadsGREEN"/>
+            android:textColor="@color/dimpleheadsGREEN"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p1h7"
@@ -564,12 +571,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p2h7"
@@ -577,12 +584,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p3h7"
@@ -590,12 +597,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p4h7"
@@ -603,12 +610,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/h8"
@@ -617,8 +624,8 @@
             android:layout_margin="1dp"
             android:padding="2dp"
             android:text="@string/_8"
-            android:textSize="25sp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/h8par"
@@ -628,8 +635,8 @@
             android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
-            android:textSize="25sp"
-            android:textColor="@color/dimpleheadsGREEN"/>
+            android:textColor="@color/dimpleheadsGREEN"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p1h8"
@@ -637,12 +644,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p2h8"
@@ -650,12 +657,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p3h8"
@@ -663,12 +670,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p4h8"
@@ -676,12 +683,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/h9"
@@ -690,8 +697,8 @@
             android:layout_margin="1dp"
             android:padding="2dp"
             android:text="@string/_9"
-            android:textSize="25sp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
 
         <TextView
@@ -702,8 +709,8 @@
             android:background="@drawable/squareblackboarder"
             android:padding="2dp"
             android:text="@string/_1"
-            android:textSize="25sp"
-            android:textColor="@color/dimpleheadsGREEN"/>
+            android:textColor="@color/dimpleheadsGREEN"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p1h9"
@@ -711,12 +718,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p2h9"
@@ -724,12 +731,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p3h9"
@@ -737,12 +744,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/p4h9"
@@ -750,12 +757,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="@drawable/squaregreenboarder"
-            android:padding="2dp"
-            android:text="@string/_1"
-            android:textSize="25sp"
             android:clickable="true"
             android:focusable="true"
-            android:textColor="@color/black"/>
+            android:padding="2dp"
+            android:text="@string/_1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
     </GridLayout>
 
@@ -778,6 +785,5 @@
         android:layout_marginVertical="10dp"
         android:backgroundTint="@color/dimpleheadsGREEN"
         android:text="@string/finish_round" />
-
 
 </RelativeLayout>
