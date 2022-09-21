@@ -776,8 +776,8 @@
         android:layout_below="@id/prevORnext9btn"
         android:layout_marginHorizontal="50dp"
         android:layout_marginVertical="10dp"
-        android:text="@string/finish_round"
-        android:backgroundTint="@color/dimpleheadsGREEN"/>
+        android:backgroundTint="@color/dimpleheadsGREEN"
+        android:text="@string/finish_round" />
 
 
 </RelativeLayout>

@@ -1,6 +1,7 @@
 package com.dimplehead.app
 
 import android.app.Dialog
+import android.content.Intent
 import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -907,6 +908,64 @@ class ActiveRound : AppCompatActivity() {
             }
         }
 
+    //Ends the Round
+        finishroundbtn.setOnClickListener {
+            var plyr1Score = 0
+            var plyr2Score = 0
+            var plyr3Score = 0
+            var plyr4Score = 0
+
+            for ((Int, String) in p1score) {
+                plyr1Score += String.toInt()
+            }
+            for ((Int, String) in p2score) {
+                plyr2Score += String.toInt()
+            }
+            for ((Int, String) in p3score) {
+                plyr3Score += String.toInt()
+            }
+            for ((Int, String) in p4score) {
+                plyr4Score += String.toInt()
+            }
+
+            val intent = Intent(this, RoundFinished::class.java)
+
+            if(numberOfPlayers == 1)
+            {
+                intent.putExtra("NumberOfPlayers", numberOfPlayers)
+                intent.putExtra("PlayerOneScore", plyr1Score)
+            }
+            else if (numberOfPlayers == 2)
+            {
+                intent.putExtra("NumberOfPlayers", numberOfPlayers)
+                intent.putExtra("NameOfPlayerTwo", nameOfPlayer2)
+                intent.putExtra("PlayerOneScore", plyr1Score)
+                intent.putExtra("PlayerTwoScore", plyr2Score)
+            }
+            else if (numberOfPlayers == 3)
+            {
+                intent.putExtra("NumberOfPlayers", numberOfPlayers)
+                intent.putExtra("NameOfPlayerTwo", nameOfPlayer2)
+                intent.putExtra("NameOfPlayerThree", nameOfPlayer3)
+                intent.putExtra("PlayerOneScore", plyr1Score)
+                intent.putExtra("PlayerTwoScore", plyr2Score)
+                intent.putExtra("PlayerThreeScore", plyr3Score)
+            }
+            else if (numberOfPlayers == 4)
+            {
+                intent.putExtra("NumberOfPlayers", numberOfPlayers)
+                intent.putExtra("NameOfPlayerTwo", nameOfPlayer2)
+                intent.putExtra("NameOfPlayerThree", nameOfPlayer3)
+                intent.putExtra("NameOfPlayerFour", nameOfPlayer4)
+                intent.putExtra("PlayerOneScore", plyr1Score)
+                intent.putExtra("PlayerTwoScore", plyr2Score)
+                intent.putExtra("PlayerThreeScore", plyr3Score)
+                intent.putExtra("PlayerFourScore", plyr4Score)
+            }
+
+            startActivity(intent)
+        }
+
     }
 
     private fun showEnterScoreDialog(scoreTextView: TextView, numberHole: Int, scoreMap: HashMap<Int, String>) {
@@ -946,7 +1005,6 @@ class ActiveRound : AppCompatActivity() {
         }
         dialog.show()
     }
-
 
     private fun clearall() {
         h1par.text = getString(R.string._1)

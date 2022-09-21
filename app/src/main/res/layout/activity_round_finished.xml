@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RoundFinished">
+
+    <TextView
+        android:id="@+id/headerRoundFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/round_finished_at"
+        android:textColor="@color/dimpleheadsGREEN"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/roundFinishedGolfCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerRoundFinish"
+        android:layout_centerHorizontal="true"
+        android:text="@string/diamondspringsgolfcourse"
+        android:textColor="@color/dimpleheadsGREEN"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/entireFirstPlaceRL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roundFinishedGolfCourse"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/roundfinishedFirstPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/firstplacegold"
+            android:padding="15dp"
+            android:text="@string/first_place"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/firstplaceplaver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/roundfinishedFirstPlace"
+            android:background="@color/firstplacegold"
+            android:padding="15dp"
+            android:text="@string/matt"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/firstplacescore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_toEndOf="@+id/firstplaceplaver"
+            android:background="@color/firstplacegold"
+            android:padding="15dp"
+            android:text="@string/_78"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/entireSecondPlaceRL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/entireFirstPlaceRL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/roundfinishedSecondPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/secondplacesilver"
+            android:padding="13dp"
+            android:text="@string/second_place"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/secondplaceplaver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/roundfinishedSecondPlace"
+            android:background="@color/secondplacesilver"
+            android:padding="13dp"
+            android:text="@string/matt"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/secondplacescore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_toEndOf="@+id/secondplaceplaver"
+            android:background="@color/secondplacesilver"
+            android:padding="13dp"
+            android:text="@string/_78"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/entireThirdPlaceRL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/entireSecondPlaceRL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/roundfinishedThirdPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/thirdplacebronze"
+            android:padding="11dp"
+            android:text="@string/third_place"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/thirdplaceplaver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/roundfinishedThirdPlace"
+            android:background="@color/thirdplacebronze"
+            android:padding="11dp"
+            android:text="@string/matt"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/thirdplacescore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_toEndOf="@+id/thirdplaceplaver"
+            android:background="@color/thirdplacebronze"
+            android:padding="11dp"
+            android:text="@string/_78"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/entireFourthPlaceRL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/entireThirdPlaceRL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/fourthplaceplaver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:padding="11dp"
+            android:text="@string/matt"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fourthplacescore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_toEndOf="@+id/fourthplaceplaver"
+            android:background="@color/black"
+            android:padding="11dp"
+            android:text="@string/_78"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/roundfinishedpar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/entireFourthPlaceRL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#D9D9D6"
+        android:text="@string/par_at_diamond_springs_golf_course_is_72"
+        android:textColor="@color/black"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/returnhomebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_home"
+        android:layout_below="@id/roundfinishedpar"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"/>
+
+</RelativeLayout>

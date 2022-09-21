@@ -23,7 +23,6 @@ class NewRound : AppCompatActivity() {
             showAddPlayerDialog()
         }
 
-
         playaroundBTNiv.setOnClickListener {
             val intent = Intent(this, ActiveRound::class.java)
             intent.putExtra("NumberOfPlayers", numOfPlayers)

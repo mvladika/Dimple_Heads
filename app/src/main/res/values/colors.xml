@@ -9,4 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="dimpleheadsGREEN">#009A17</color>
     <color name="secondaryDHG">#84E35D</color>
+    <color name="firstplacegold">#C9B037</color>
+    <color name="secondplacesilver">#B4B4B4</color>
+    <color name="thirdplacebronze">#AD8A56</color>
+
+
 </resources>
