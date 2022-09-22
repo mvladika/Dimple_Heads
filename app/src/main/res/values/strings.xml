@@ -133,4 +133,5 @@
     <string name="rental_clubs_yes">Rental Clubs: Yes</string>
     <string name="pro_on_site_yes">Pro On Site: Yes</string>
     <string name="close">Close</string>
+    <string name="sign_out">Sign Out</string>
 </resources>

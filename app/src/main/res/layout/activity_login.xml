@@ -43,7 +43,7 @@
             android:ems="10"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
-            android:textColor="@color/dimpleheadsGREEN"/>
+            android:textColor="@color/dimpleheadsGREEN" />
 
         <EditText
             android:id="@+id/passwordEditText"
@@ -63,10 +63,10 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_below="@id/passwordEditText"
-            android:backgroundTint="@color/dimpleheadsGREEN"
             android:layout_centerHorizontal="true"
             android:layout_marginHorizontal="40dp"
-            android:text="@string/log_in"/>
+            android:backgroundTint="@color/dimpleheadsGREEN"
+            android:text="@string/log_in" />
 
     </RelativeLayout>
 
@@ -87,13 +87,14 @@
             android:layout_centerInParent="true"/>
 
         <Button
+            android:id="@+id/createAccountbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/noAccount"
-            android:backgroundTint="@color/dimpleheadsGREEN"
-            android:text="@string/create_one"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="40dp"
-            android:layout_centerHorizontal="true"/>
+            android:backgroundTint="@color/dimpleheadsGREEN"
+            android:text="@string/create_one" />
 
     </RelativeLayout>
 

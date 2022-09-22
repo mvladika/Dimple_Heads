@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         //setContentView(binding.root)
 
-        val intent = Intent(this, UserHome::class.java)
+        val intent = Intent(this, Login::class.java)
         startActivity(intent)
 
         binding.btnSubmitCourse.setOnClickListener {

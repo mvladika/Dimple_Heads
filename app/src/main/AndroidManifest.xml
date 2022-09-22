@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dimplehead.app">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/appicon"
@@ -36,10 +38,12 @@
             android:theme="@style/Theme.DimpleHeads.NoActionBar" />
         <activity
             android:name=".CreateAccount"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.DimpleHeads.NoActionBar"/>
         <activity
             android:name=".Login"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.DimpleHeads.NoActionBar"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

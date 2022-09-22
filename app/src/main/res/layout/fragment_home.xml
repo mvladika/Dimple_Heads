@@ -51,7 +51,8 @@
                 android:paddingStart="5dp"
                 android:text="@string/exampleLastCoursePlayed"
                 android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:visibility="invisible"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -79,7 +80,8 @@
                 android:paddingStart="5dp"
                 android:text="@string/_68_3_over_par_for_18_holes"
                 android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:visibility="invisible"/>
 
         </RelativeLayout>
 
@@ -107,7 +109,8 @@
                 android:paddingStart="5dp"
                 android:text="@string/_3_strokes_on_a_par_5_on_04_23_2022"
                 android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:visibility="invisible"/>
 
         </RelativeLayout>
     </RelativeLayout>
@@ -124,14 +127,14 @@
         android:textSize="18sp" />
 
     <Button
-        android:id="@+id/continueroundBtn"
+        android:id="@+id/signoutbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/playnewroundBtn"
-        android:layout_marginHorizontal="40dp"
+        android:layout_below="@id/mystatisticsBtn"
+        android:layout_marginHorizontal="80dp"
         android:layout_marginTop="20dp"
         android:paddingVertical="15dp"
-        android:text="@string/continue_round"
+        android:text="@string/sign_out"
         android:textSize="18sp"
         android:visibility="visible" />
 
@@ -139,7 +142,7 @@
         android:id="@+id/mystatisticsBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/continueroundBtn"
+        android:layout_below="@id/playnewroundBtn"
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="20dp"
         android:paddingVertical="15dp"
@@ -149,8 +152,8 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/mystatisticsBtn"
-        app:srcCompat="@drawable/greenclipart"
-        android:padding="3dp"/>
+        android:layout_below="@id/signoutbutton"
+        android:padding="3dp"
+        app:srcCompat="@drawable/greenclipart" />
 
 </RelativeLayout>

@@ -7,9 +7,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.dimplehead.app.Login
 import com.dimplehead.app.NewRound
 import com.dimplehead.app.databinding.FragmentHomeBinding
 import com.dimplehead.app.ui.slideshow.SlideshowFragment
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.fragment_home.*
 
 
@@ -30,6 +32,12 @@ class HomeFragment : Fragment() {
 
         binding.playnewroundBtn.setOnClickListener {
             val intent = Intent(activity, NewRound::class.java)
+            startActivity(intent)
+        }
+
+        binding.signoutbutton.setOnClickListener {
+            FirebaseAuth.getInstance().signOut()
+            val intent = Intent(activity, Login::class.java)
             startActivity(intent)
         }
 

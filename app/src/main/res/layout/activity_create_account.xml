@@ -51,50 +51,50 @@
         android:id="@+id/emailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/dobEditText"
         android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
         android:background="@drawable/squaregreenboarder"
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
-        android:textColor="@color/dimpleheadsGREEN"
-        android:layout_below="@id/dobEditText"
-        android:layout_marginTop="5dp"/>
+        android:textColor="@color/dimpleheadsGREEN" />
 
     <EditText
         android:id="@+id/passwordEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/emailEditText"
         android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
         android:background="@drawable/squaregreenboarder"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
-        android:textColor="@color/dimpleheadsGREEN"
-        android:layout_below="@id/emailEditText"
-        android:layout_marginTop="5dp"/>
+        android:textColor="@color/dimpleheadsGREEN" />
 
     <EditText
         android:id="@+id/yearsGolfingEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
         android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
         android:background="@drawable/squaregreenboarder"
         android:ems="10"
         android:hint="@string/yearsGolfing"
         android:inputType="number"
-        android:textColor="@color/dimpleheadsGREEN"
-        android:layout_below="@id/passwordEditText"
-        android:layout_marginTop="5dp"/>
+        android:textColor="@color/dimpleheadsGREEN" />
 
     <Button
         android:id="@+id/signinButton"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_below="@id/yearsGolfingEditText"
-        android:backgroundTint="@color/dimpleheadsGREEN"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="40dp"
-        android:text="@string/createAccount"/>
+        android:backgroundTint="@color/dimpleheadsGREEN"
+        android:text="@string/createAccount" />
 
 </RelativeLayout>
 

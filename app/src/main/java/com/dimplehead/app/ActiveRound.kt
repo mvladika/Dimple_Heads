@@ -2,7 +2,6 @@ package com.dimplehead.app
 
 import android.app.Dialog
 import android.content.Intent
-import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View.GONE
@@ -12,7 +11,6 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_active_round.*
-import kotlinx.android.synthetic.main.activity_new_round.*
 
 class ActiveRound : AppCompatActivity() {
 
