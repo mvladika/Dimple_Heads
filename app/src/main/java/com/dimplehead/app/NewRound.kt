@@ -12,10 +12,24 @@ import kotlinx.android.synthetic.main.activity_new_round.*
 class NewRound : AppCompatActivity() {
 
     var numOfPlayers = 1
+    var userBestScore: String? = null
+    var userName: String? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_round)
+        val bundle: Bundle? = intent.extras
+
+
+        bundle?.let {
+            bundle.apply {
+                userBestScore = intent.getStringExtra("UserBestScore")
+                userName = intent.getStringExtra("UserName")
+            }
+        }
+
+        usersNamePlayers.text = userName
 
         setupCourseSpinner()
         val spinny = findViewById<Spinner>(R.id.newroundCourseSpinner)
@@ -27,8 +41,10 @@ class NewRound : AppCompatActivity() {
         playaroundBTNiv.setOnClickListener {
             val intent = Intent(this, ActiveRound::class.java)
             intent.putExtra("NumberOfPlayers", numOfPlayers)
+            intent.putExtra("UserBestScore", userBestScore)
             val nameOfCourse = spinny.selectedItem.toString()
             intent.putExtra("NameOfCourse", nameOfCourse)
+            intent.putExtra("UserName", userName)
 
             val nameOfPlayerTwoString : String = player2name.text.toString()
             val nameOfPlayerThreeString : String = player3name.text.toString()

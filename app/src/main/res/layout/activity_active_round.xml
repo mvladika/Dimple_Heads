@@ -111,7 +111,8 @@
             android:padding="1dp"
             android:text="@string/num_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/h1par"
@@ -124,7 +125,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/dimpleheadsGREEN"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p1h1"
@@ -137,7 +139,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p2h1"
@@ -150,7 +153,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p3h1"
@@ -163,7 +167,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p4h1"
@@ -176,7 +181,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/h2"
@@ -186,7 +192,8 @@
             android:padding="2dp"
             android:text="@string/_2"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/h2par"
@@ -197,7 +204,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/dimpleheadsGREEN"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p1h2"
@@ -210,7 +218,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p2h2"
@@ -223,7 +232,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p3h2"
@@ -236,7 +246,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p4h2"
@@ -249,7 +260,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/h3"
@@ -259,7 +271,8 @@
             android:padding="2dp"
             android:text="@string/_3"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/h3par"
@@ -270,7 +283,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/dimpleheadsGREEN"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p1h3"
@@ -283,7 +297,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p2h3"
@@ -296,7 +311,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p3h3"
@@ -309,7 +325,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p4h3"
@@ -322,7 +339,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/h4"
@@ -332,7 +350,8 @@
             android:padding="2dp"
             android:text="@string/_4"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/h4par"
@@ -343,7 +362,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/dimpleheadsGREEN"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p1h4"
@@ -356,7 +376,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p2h4"
@@ -369,7 +390,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p3h4"
@@ -382,7 +404,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p4h4"
@@ -395,7 +418,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/h5"
@@ -405,7 +429,8 @@
             android:padding="2dp"
             android:text="@string/_5"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/h5par"
@@ -416,7 +441,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/dimpleheadsGREEN"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p1h5"
@@ -429,7 +455,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p2h5"
@@ -442,7 +469,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p3h5"
@@ -455,7 +483,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
 
         <TextView
@@ -469,7 +498,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/h6"
@@ -479,7 +509,8 @@
             android:padding="2dp"
             android:text="@string/_6"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/h6par"
@@ -490,7 +521,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/dimpleheadsGREEN"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p1h6"
@@ -503,7 +535,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p2h6"
@@ -516,7 +549,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p3h6"
@@ -529,7 +563,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p4h6"
@@ -542,7 +577,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/h7"
@@ -552,7 +588,8 @@
             android:padding="2dp"
             android:text="@string/_7"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/h7par"
@@ -563,7 +600,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/dimpleheadsGREEN"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p1h7"
@@ -576,7 +614,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p2h7"
@@ -589,7 +628,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p3h7"
@@ -602,7 +642,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p4h7"
@@ -615,7 +656,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/h8"
@@ -625,7 +667,8 @@
             android:padding="2dp"
             android:text="@string/_8"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/h8par"
@@ -636,7 +679,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/dimpleheadsGREEN"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p1h8"
@@ -649,7 +693,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p2h8"
@@ -662,7 +707,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p3h8"
@@ -675,7 +721,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p4h8"
@@ -688,7 +735,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/h9"
@@ -698,7 +746,8 @@
             android:padding="2dp"
             android:text="@string/_9"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
 
         <TextView
@@ -710,7 +759,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/dimpleheadsGREEN"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p1h9"
@@ -723,7 +773,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p2h9"
@@ -736,7 +787,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p3h9"
@@ -749,7 +801,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/p4h9"
@@ -762,7 +815,8 @@
             android:padding="2dp"
             android:text="@string/_1"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
 
     </GridLayout>
 

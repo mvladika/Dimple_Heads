@@ -209,8 +209,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/entireFourthPlaceRL"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="45dp"
         android:background="#D9D9D6"
+        android:paddingHorizontal="10dp"
         android:text="@string/par_at_diamond_springs_golf_course_is_72"
         android:textColor="@color/black"
         android:textStyle="italic" />
@@ -219,9 +220,9 @@
         android:id="@+id/returnhomebtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/menu_home"
         android:layout_below="@id/roundfinishedpar"
-        android:layout_marginTop="30dp"
-        android:layout_marginHorizontal="30dp"/>
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/menu_home" />
 
 </RelativeLayout>

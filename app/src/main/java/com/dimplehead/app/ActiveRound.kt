@@ -25,6 +25,8 @@ class ActiveRound : AppCompatActivity() {
     var nameOfPlayer4: String? = null
     var nameOfCourse: String? = null
     var coursePar: String? = null
+    var userBestScore: String? = null
+    var userName: String? = null
     private lateinit var database: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,9 +48,11 @@ class ActiveRound : AppCompatActivity() {
 
     //Getting Names of Each Player From New Round
         bundle?.let {
-
             bundle.apply {
                 nameOfCourse = bundle.getString("NameOfCourse") as String
+                userBestScore = intent.getStringExtra("UserBestScore")
+                userName = intent.getStringExtra("UserName")
+
                 if (numberOfPlayers == 2) {
                     nameOfPlayer2 = bundle.getString("NameOfPlayerTwo") as String
                 } else if (numberOfPlayers == 3) {
@@ -85,22 +89,22 @@ class ActiveRound : AppCompatActivity() {
             setPlayer2invisible()
             setPlayer3invisible()
             setPlayer4invisible()
-            player1headertv.text = getString(R.string.matt)
+            player1headertv.text = userName
         }
         else if (numberOfPlayers == 2) {
             setPlayer3invisible()
             setPlayer4invisible()
-            player1headertv.text = getString(R.string.matt)
+            player1headertv.text = userName
             player2headertv.text = nameOfPlayer2
         }
         else if (numberOfPlayers == 3) {
             setPlayer4invisible()
-            player1headertv.text = getString(R.string.matt)
+            player1headertv.text = userName
             player2headertv.text = nameOfPlayer2
             player3headertv.text = nameOfPlayer3
         }
         else if (numberOfPlayers == 4) {
-            player1headertv.text = getString(R.string.matt)
+            player1headertv.text = userName
             player2headertv.text = nameOfPlayer2
             player3headertv.text = nameOfPlayer3
             player4headertv.text = nameOfPlayer4
@@ -954,6 +958,9 @@ class ActiveRound : AppCompatActivity() {
             val intent = Intent(this, RoundFinished::class.java)
             intent.putExtra("NameOfCourse", nameOfCourse)
             intent.putExtra("ParOfCourse", coursePar)
+            intent.putExtra("UserBestScore", userBestScore)
+            intent.putExtra("UserName", userName)
+
 
             if(numberOfPlayers == 1)
             {
@@ -1036,11 +1043,10 @@ class ActiveRound : AppCompatActivity() {
         val addscorebtn = dialog.findViewById<Button>(R.id.addscoredialogbutton)
         val dialogHeader = dialog.findViewById<TextView>(R.id.enterScoreDialogTV)
         var newHeaderText: String? = null
-        val nameOfPlayer1 = "Matt"
 
         if(scoreMap == p1score)
         {
-            newHeaderText = "Hole $numberHole: Number of Strokes for $nameOfPlayer1"
+            newHeaderText = "Hole $numberHole: Number of Strokes for $userName"
         }
         else if (scoreMap == p2score)
         {

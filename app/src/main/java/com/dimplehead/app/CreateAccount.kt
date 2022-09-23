@@ -59,7 +59,7 @@ class CreateAccount : AppCompatActivity() {
                 val uid: String = auth.uid.toString()
 
                 val user = Users(nameEditText.text.trim().toString(), dobEditText.text.trim().toString(),
-                    emailEditText.text.trim().toString(), yearsGolfingEditText.text.trim().toString(), uid)
+                    emailEditText.text.trim().toString(), yearsGolfingEditText.text.trim().toString(), uid, "No Current Data", "No Current Data", "No Current Data")
 
                 database.child(uid).setValue(user)
 
