@@ -55,7 +55,7 @@
             android:layout_toEndOf="@+id/roundfinishedFirstPlace"
             android:background="@color/firstplacegold"
             android:padding="15dp"
-            android:text="@string/matt"
+            android:text="@string/name"
             android:textColor="@color/white"
             android:textSize="22sp"
             android:textStyle="bold" />
@@ -102,7 +102,7 @@
             android:layout_toEndOf="@+id/roundfinishedSecondPlace"
             android:background="@color/secondplacesilver"
             android:padding="13dp"
-            android:text="@string/matt"
+            android:text="@string/name"
             android:textColor="@color/white"
             android:textSize="19sp"
             android:textStyle="bold" />
@@ -149,7 +149,7 @@
             android:layout_toEndOf="@+id/roundfinishedThirdPlace"
             android:background="@color/thirdplacebronze"
             android:padding="11dp"
-            android:text="@string/matt"
+            android:text="@string/name"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -183,7 +183,7 @@
             android:layout_height="wrap_content"
             android:background="@color/black"
             android:padding="11dp"
-            android:text="@string/matt"
+            android:text="@string/name"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />

@@ -57,8 +57,6 @@ class HomeFragment : Fragment() {
 
         binding.playnewroundBtn.setOnClickListener {
             val intent = Intent(activity, NewRound::class.java)
-            intent.putExtra("UserBestScore", userBestScore)
-            intent.putExtra("UserName", userName)
             startActivity(intent)
         }
 

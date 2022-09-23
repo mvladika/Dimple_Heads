@@ -67,7 +67,6 @@
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@id/player1tv"
                 android:paddingStart="10dp"
-                android:text="@string/matthew_vladika"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
 

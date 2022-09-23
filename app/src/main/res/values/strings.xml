@@ -134,4 +134,6 @@
     <string name="pro_on_site_yes">Pro On Site: Yes</string>
     <string name="close">Close</string>
     <string name="sign_out">Sign Out</string>
+    <string name="first_name_or_nickname">First Name or Nickname</string>
+    <string name="user_name_dimple_head">User Name, Dimple Head</string>
 </resources>

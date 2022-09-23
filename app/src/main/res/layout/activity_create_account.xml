@@ -30,7 +30,7 @@
         android:layout_marginHorizontal="10dp"
         android:background="@drawable/squaregreenboarder"
         android:ems="10"
-        android:hint="@string/name"
+        android:hint="@string/first_name_or_nickname"
         android:inputType="text"
         android:textColor="@color/dimpleheadsGREEN" />
 

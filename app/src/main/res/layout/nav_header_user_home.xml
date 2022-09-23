@@ -24,7 +24,7 @@
         android:id="@+id/exampleOfUserMenuTextView"
         android:layout_width="match_parent"
         android:layout_height="22dp"
-        android:text="@string/userMenuExampleText"
+        android:text="@string/user_name_dimple_head"
         android:textSize="18sp"
         android:textStyle="bold" />
 

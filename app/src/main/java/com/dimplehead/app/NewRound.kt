@@ -7,29 +7,36 @@ import android.os.Bundle
 import android.view.View.VISIBLE
 import android.view.Window
 import android.widget.*
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_new_round.*
+import kotlinx.android.synthetic.main.fragment_home.*
 
 class NewRound : AppCompatActivity() {
 
     var numOfPlayers = 1
     var userBestScore: String? = null
     var userName: String? = null
+    private lateinit var database: DatabaseReference
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_round)
-        val bundle: Bundle? = intent.extras
 
-
-        bundle?.let {
-            bundle.apply {
-                userBestScore = intent.getStringExtra("UserBestScore")
-                userName = intent.getStringExtra("UserName")
-            }
+        var user: Users? = null
+        database = Firebase.database.reference
+        database.child("Users").child(FirebaseAuth.getInstance().uid.toString()).get().addOnSuccessListener {
+            user = it.getValue(Users::class.java)!!
+            userBestScore = user?.userBestScore
+            userName = user?.userName
+            usersNamePlayers.text = userName
+        }.addOnFailureListener{
+            Toast.makeText(this, it.message, Toast.LENGTH_SHORT).show()
         }
 
-        usersNamePlayers.text = userName
 
         setupCourseSpinner()
         val spinny = findViewById<Spinner>(R.id.newroundCourseSpinner)
