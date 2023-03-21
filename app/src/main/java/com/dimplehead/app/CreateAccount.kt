@@ -9,6 +9,8 @@ import com.dimplehead.app.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_create_account.*
 
 class CreateAccount : AppCompatActivity() {
@@ -53,18 +55,17 @@ class CreateAccount : AppCompatActivity() {
             .addOnCompleteListener {
             if(it.isSuccessful)
             {
-                Toast.makeText(this, "Registration Successful", Toast.LENGTH_LONG).show()
-
                 database = FirebaseDatabase.getInstance().getReference("Users")
                 val uid: String = auth.uid.toString()
 
                 val user = Users(nameEditText.text.trim().toString(), dobEditText.text.trim().toString(),
                     emailEditText.text.trim().toString(), yearsGolfingEditText.text.trim().toString(), uid, "No Current Data", "No Current Data", "No Current Data")
 
-                database.child(uid).setValue(user)
-
-                val intent = Intent(this, UserHome::class.java)
-                startActivity(intent)
+                database.child(uid).setValue(user).addOnSuccessListener {
+                    Toast.makeText(this, "Registration Successful", Toast.LENGTH_LONG).show()
+                    val intent = Intent(this, UserHome::class.java)
+                    startActivity(intent)
+                }
             }
             else
             {
@@ -76,7 +77,9 @@ class CreateAccount : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
 
-        val user = auth.currentUser
+        database = Firebase.database.reference
+        //database.child("Users")
+        val user = auth.uid?.let { database.child("Users").child(it) }
 
         if(user != null)
         {
