@@ -39,11 +39,11 @@ class UserHome : AppCompatActivity() {
         setSupportActionBar(binding.appBarUserHome.toolbar)
 
 
-        var user: Users? = null
+        var user: Users
         database = Firebase.database.reference
         database.child("Users").child(FirebaseAuth.getInstance().uid.toString()).get().addOnSuccessListener {
             user = it.getValue(Users::class.java)!!
-            val userName = user?.userName
+            val userName = user.userName
             exampleOfUserMenuTextView.text = "$userName, Dimple Head"
         }.addOnFailureListener{
             Toast.makeText(this, it.message, Toast.LENGTH_SHORT).show()
