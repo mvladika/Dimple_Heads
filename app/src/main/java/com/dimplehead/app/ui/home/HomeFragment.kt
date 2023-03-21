@@ -16,15 +16,19 @@ import com.dimplehead.app.databinding.FragmentHomeBinding
 import com.dimplehead.app.ui.slideshow.SlideshowFragment
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.fragment_home.*
+
 
 
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
     private lateinit var database: DatabaseReference
+    private lateinit var auth: FirebaseAuth
+
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -40,16 +44,23 @@ class HomeFragment : Fragment() {
     ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
+        //database = FirebaseDatabase.getInstance().getReference("Users")
+        //var user = auth.uid?.let { database.child(it) };
 
-        var user: Users? = null
+        //if(user != null)
+        //{
+        //    userBestScore = user?.
+        //}
+
+        var user : Users
         database = Firebase.database.reference
         database.child("Users").child(FirebaseAuth.getInstance().uid.toString()).get().addOnSuccessListener {
             user = it.getValue(Users::class.java)!!
-            userBestScore = user?.userBestScore
-            userName = user?.userName
+            userBestScore = user.userBestScore
+            userName = user.userName
             homefragusername.text = userName
-            homefraglastcourse.text = user?.lastCoursePlayed
-            homefragfinalscoreoflastgame.text = user?.finalScoreOfLastRound
+            homefraglastcourse.text = user.lastCoursePlayed
+            homefragfinalscoreoflastgame.text = user.finalScoreOfLastRound
             homefragbestscore.text = userBestScore
         }.addOnFailureListener{
             Toast.makeText(activity, it.message, Toast.LENGTH_SHORT).show()
