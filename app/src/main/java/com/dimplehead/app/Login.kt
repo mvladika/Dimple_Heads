@@ -6,11 +6,16 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_login.*
 
 class Login : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
+    private lateinit var database : DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,7 +54,9 @@ class Login : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
 
-        val user = auth.currentUser
+        database = Firebase.database.reference
+        //database.child("Users")
+        val user = auth.uid?.let { database.child("Users").child(it) }
 
         if(user != null)
         {
